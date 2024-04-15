@@ -72,3 +72,11 @@ const Farm = mongoose.model('Farm', farmSchema);
 //     console.log(result);
 // }
 // addProduct('661cfd536680aca2bbd12e6e');
+
+// Farm.findOne({ name: 'Farm' }).populate('products').then(res => {
+//     for (const product of res.products) {
+//         console.log(product);
+//     }
+// }).catch(err => {
+//     console.log(err);
+// })
